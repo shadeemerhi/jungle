@@ -1,7 +1,20 @@
 <section class="dashboard-show">
 
-  <h3>Store Statistics</h3>
-  <div class="stat-container">
-    <h4> LOL</h4>
+  <h3 id="store-stats-title">Store Statistics</h3>
+  <div class="stats-container">
+    <div class="products-container">
+      <h4 class="stat-title">Number of Products: <%= @product_count %></h4>
+      <div class="row text-center">
+        <%= link_to 'Manage Products', admin_products_path, :class => "btn btn-primary"%>
+      </div>
+    </div>
+    <div class="categories-container">
+      <h4 class="stat-title">Number of Categories: <%=@categories.size%></h4>
+      <div class="btn-container">
+        <% @categories.each do |category|%>
+          <%= link_to category.name, category, :class => "btn btn-success" %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </section>
