@@ -1,6 +1,46 @@
 main section.orders-show {
 
-  header {
-    background-color: blue;
+  .summary-titles {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .line_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    .line_item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .image {
+        width: auto;
+        height: 20%;
+      }
+
+      .description {
+        text-align: center;
+        width: 20%;
+      }
+
+      .quantity {
+        align-items: center;
+      }
+
+      .price {
+        align-items: center;
+      }
+    }
+  }
+
+  .order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
   }
 }
