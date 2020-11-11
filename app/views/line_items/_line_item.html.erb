@@ -1,3 +1,12 @@
 <p class="line_item">
-  <%= line_item.product_id %>
+  <%= line_item.product.name %>
+</p>
+<p class="line_item">
+  <%= line_item.quantity %>
+</p>
+<p class="line_item">
+  <%= image_tag line_item.product.image.thumb, alt: line_item.product.name %>
+</p>
+<p class="line_item">
+  <%= line_item.product.description %>
 </p>
