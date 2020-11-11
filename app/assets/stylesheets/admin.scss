@@ -1,3 +1,44 @@
 main section.dashboard-show {
 
+  #store-stats-title {
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .stat-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+
+    .products-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .btn {
+        margin-right: 2rem;
+      }
+    }
+
+    .categories-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .btn-container {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+
+        .btn {
+          margin-right: 0.5rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
 }
