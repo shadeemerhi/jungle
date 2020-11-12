@@ -1,23 +1,36 @@
-<h1>Create an Account</h1>
+<section class="users-new">
 
-<%= form_for @user, url: '/users' do |f| %>
+  <h1>Create an Account</h1>
 
-  <% if f.object.errors.any? %>
-    <div class="alert alert-danger">
-      <strong>The following errors prevented signup:</strong>
-      <ul>
-        <% f.object.errors.full_messages.each do |error| %>
-          <li><%= error %></li>
-        <% end %>
-      </ul>
+  <%= form_for :user, url: '/users' do |f| %>
+
+    <div class="form-group">
+      <%= f.label 'First Name' %>
+      <%= f.text_field :first_name, class: 'form-control' %>
     </div>
+
+     <div class="form-group">
+      <%= f.label 'Last Name' %>
+      <%= f.text_field :last_name, class: 'form-control' %>
+    </div>
+
+     <div class="form-group">
+      <%= f.label 'Email' %>
+      <%= f.text_field :email, class: 'form-control' %>
+    </div>
+
+     <div class="form-group">
+      <%= f.label 'Password' %>
+      <%= f.password_field :password, class: 'form-control' %>
+    </div>
+
+     <div class="form-group">
+      <%= f.label 'Confirm password' %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+    </div>
+
+    <%= f.submit "Submit", class: 'btn btn-primary'%>
+
   <% end %>
 
-  First Name: <%= f.text_field :first_name %>
-  Last Name: <%= f.text_field :last_name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
-
-<% end %>
+</section>
