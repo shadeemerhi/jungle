@@ -11,9 +11,7 @@
     <div class="categories-container">
       <h4 class="stat-title">Number of Categories: <%=@categories.size%></h4>
       <div class="btn-container">
-        <% @categories.each do |category|%>
-          <%= link_to category.name, category, :class => "btn btn-success" %>
-        <% end %>
+        <%= link_to 'Manage Categories', admin_categories_path, :class => "btn btn-primary"%>
       </div>
     </div>
   </div>
