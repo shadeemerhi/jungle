@@ -1,6 +1,17 @@
 <h1>Create an Account</h1>
 
-<%= form_for :user, url: '/users' do |f| %>
+<%= form_for @user, url: '/users' do |f| %>
+
+  <% if f.object.errors.any? %>
+    <div class="alert alert-danger">
+      <strong>The following errors prevented signup:</strong>
+      <ul>
+        <% f.object.errors.full_messages.each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   First Name: <%= f.text_field :first_name %>
   Last Name: <%= f.text_field :last_name %>
