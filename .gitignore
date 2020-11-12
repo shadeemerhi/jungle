@@ -55,3 +55,6 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore file for storing random code
+random.html.erb
