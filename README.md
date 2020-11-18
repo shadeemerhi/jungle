@@ -13,8 +13,8 @@ A mini e-commerce application built with Rails 4.2.
 ### Stripe payment
 !["Stripe payment"](https://github.com/shadeemerhi/jungle/blob/master/docs/payment.gif)
 
-### Admin product and category management
-!["Admin product and category management"](https://github.com/shadeemerhi/jungle/blob/master/docs/admin-products.gif)
+### Admins can access product and category management pages
+!["Admin product and category management"](https://github.com/shadeemerhi/jungle/blob/master/docs/admin-access.gif)
 
 ### Admins can create new products
 ![" Admins can create new products"](https://github.com/shadeemerhi/jungle/blob/master/docs/admin-pnew.gif)
