@@ -5,25 +5,25 @@ A mini e-commerce application built with Rails 4.2.
 ## Final Product
 
 ### Browsing the products and categories
-!["Browsing the products and categories"]()
+!["Browsing the products and categories"](https://github.com/shadeemerhi/jungle/blob/master/docs/home.gif)
 
 ### Adding items to cart
-!["Adding items to cart"]()
+!["Adding items to cart"](https://github.com/shadeemerhi/jungle/blob/master/docs/add-items.gif)
 
 ### Stripe payment
-!["Stripe payment"]()
+!["Stripe payment"](https://github.com/shadeemerhi/jungle/blob/master/docs/payment.gif)
 
 ### Admin product and category management
-!["Admin product and category management"]()
+!["Admin product and category management"](https://github.com/shadeemerhi/jungle/blob/master/docs/admin-products.gif)
 
 ### Admins can create new products
-![" Admins can create new products"]()
+![" Admins can create new products"](https://github.com/shadeemerhi/jungle/blob/master/docs/admin-pnew.gif)
 
 ### Admins can create new categories
-!["Admins can create new categories"]()
+!["Admins can create new categories"](https://github.com/shadeemerhi/jungle/blob/master/docs/admin-cnew.gif)
 
 ### User logout
-!["User layout"]()
+!["User layout"](https://github.com/shadeemerhi/jungle/blob/master/docs/logout.gif)
 
 
 ## Setup
